@@ -5,7 +5,9 @@
     "dev": "concurrently --names \"BACKEND,FRONTEND\" --prefix-colors \"green,cyan\" --kill-others-on-fail \"cd backend && npm run dev\" \"cd sankalp-ai && npm run dev\"",
     "install:all": "cd backend && npm install && cd ../sankalp-ai && npm install",
     "backend": "cd backend && npm run dev",
-    "frontend": "cd sankalp-ai && npm run dev"
+    "frontend": "cd sankalp-ai && npm run dev",
+    "build": "next build",
+    "start": "next start"
   },
   "devDependencies": {
     "concurrently": "^8.2.2"
